@@ -367,7 +367,7 @@ scroll-behavior: smooth;
 
 /*PRE LOADER*/
 
-.pre-loader {
+/* .pre-loader {
     background-color: #a0bbd6;
     position: fixed;
     height: 100vh;
@@ -515,7 +515,7 @@ scroll-behavior: smooth;
     40% {
         opacity: 1;
     }
-}
+} */
 
 
 
