@@ -1,14 +1,4 @@
 
-
-// $("#btnScrollToTop").addEventListener("click", function() {
-
-// $("html, body").animate({scrollTop: 0}, "slow");
-
-// });
-
-
-
-
 $(document).ready(function(){
 
     
@@ -33,6 +23,8 @@ $(document).ready(function(){
         }, 2000);
 
     });
+
+
 });
 
 

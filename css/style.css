@@ -110,9 +110,16 @@ header {
     color: #fff;
 }
 
+
+#btnScrollToTop:hover {
+    background:rgb(231, 160, 152);
+    }
+    
 #btnScrollToTop:active {
-background:salmon;
+background:rgb(231, 160, 152);
 }
+
+
 
 /* TYPOGRAPHY */
 
@@ -249,6 +256,36 @@ font-size: 150%;
 .arrow {
     padding-left: 20px;
 
+}
+
+
+/*AWE */
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#backbtn {
+    background: salmon;
+    height: 80px;
+    width: 150px;
+    color: white !important;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#backbtn:hover {
+    background: lightseagreen;
+    border-bottom: none;
+}
+
+a #backbtn{
+border-bottom: none;
 }
 
 
