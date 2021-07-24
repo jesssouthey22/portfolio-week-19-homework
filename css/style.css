@@ -142,7 +142,7 @@ p{
 
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 300%;
+    font-size: 300% !important;
 }
 
 h2 {
@@ -265,8 +265,18 @@ font-size: 150%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 800px;
+    padding-left: 30%;
+    padding-right: 30%;
+
 }
 
+button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+}
 #backbtn {
     background: salmon;
     height: 80px;
@@ -382,7 +392,7 @@ p #aboutbalance {
 
 
 /* PROGRESS BAR */
-
+/* 
 progress{
 position: fixed;
 top: 0;
@@ -395,8 +405,29 @@ border: none;
 background: transparent;
 z-index: 1000;
 scroll-behavior: smooth;
-}
+-webkit-writing-mode: horizontal-tb !important;
 
+} */
+
+#myProgressBar {
+    width: 0;
+    background: lightseagreen;
+  }
+  
+  .progress {
+    top: 0;
+    position: sticky !important;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    text-align: center;
+  }
 
 
 
