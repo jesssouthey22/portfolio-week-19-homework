@@ -23,26 +23,4 @@ $(document).ready(function(){
 
     });
 
-    // window.onscroll = function() {myFunction()};
-
-    // function myFunction() {
-    //   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    //   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    //   var scrolled = (winScroll / height) * 100;
-    //   document.getElementById("myProgressBar").style.width = scrolled + "%";
-    //   document.getElementById("myProgressBar").innerHTML= Math.round(scrolled) + "%";
-    // }
-
-
-
-});
-
-
-
-    //   var div = $(this);
-    //   div.animate({height: '300px', opacity: '0.4'}, "slow");
-    //   div.animate({width: '300px', opacity: '0.8'}, "slow");
-    //   div.animate({height: '100px', opacity: '0.4'}, "slow");
-    //   div.animate({width: '100px', opacity: '0.8'}, "slow");
-    // });
-
+  });
