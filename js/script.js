@@ -31,7 +31,7 @@ $(document).ready(function(){
     //   var scrolled = (winScroll / height) * 100;
     //   document.getElementById("myProgressBar").style.width = scrolled + "%";
     //   document.getElementById("myProgressBar").innerHTML= Math.round(scrolled) + "%";
-    }
+    // }
 
 
 
