@@ -27,6 +27,13 @@ header {
     height: 300px;
 }
 
+.awePageHeader {
+    background-image:  url("../images/AWE\ Case\ Study\ Cover.png");
+    background-position:bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1200px;
+}
 #intro h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -99,8 +106,8 @@ header {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background: lightseagreen;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -142,7 +149,7 @@ p{
 
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 300% !important;
+    font-size: 48px;
 }
 
 h2 {
@@ -278,7 +285,7 @@ button {
     color: white;
 }
 #backbtn {
-    background: salmon;
+    background:rgb(231, 160, 152);
     height: 80px;
     width: 150px;
     color: white !important;
@@ -291,12 +298,9 @@ button {
 
 #backbtn:hover {
     background: lightseagreen;
-    border-bottom: none;
+    border-bottom: none !important;
 }
 
-a #backbtn{
-border-bottom: none;
-}
 
 
 /* FOOTER */
@@ -411,7 +415,7 @@ scroll-behavior: smooth;
 
 #myProgressBar {
     width: 0;
-    background: lightseagreen;
+    background:rgb(231, 160, 152);
   }
   
   .progress {
@@ -429,15 +433,148 @@ scroll-behavior: smooth;
     text-align: center;
   }
 
+/* MEDIA QUERY 1000px */
 
+@media only screen and (min-width: 701px) and (max-width: 1100px){
 
-
-
-/* MEDIA QUERY */
-
-@media only screen and (max-width: 600px){
+    h2 {
+        font-size: 40px;
+    }
     
-    /* MEDIA QUERY - NAVIGATION */
+    h3 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+       
+       /* MEDIA QUERY CASE STUDIES */
+    
+       
+    
+       .casestudyGrid {
+        display: grid;
+        max-width: 1500px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-row-gap: 100px;
+        grid-template-areas: "casestudy1 casestudy1text" 
+        "casestudy2 casestudy2text"
+        "casestudy3 casestudy3text"
+        "casestudy4 casestudy4text";
+    
+    }
+    
+    .casestudyGridArea {
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    #casestudy1, #casestudy2, #casestudy3, #casestudy4 {
+        padding: 10px;
+        margin-right: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    #casestudyimages {
+        border-radius: 3%;
+        max-height: 300px;
+        
+    }
+    
+    #casestudyimages:hover {
+        opacity: 0.9;
+        border-radius: 3%;
+    }
+    
+    #casestudy1 {
+        grid-area: casestudy1;
+        
+        
+    }
+    
+    #casestudy1text {
+        grid-area: casestudy1text;
+    }
+    
+    #casestudy2 {
+        grid-area: casestudy2;
+        
+    }
+    
+    #casestudy2text {
+        grid-area: casestudy2text;
+    }
+    
+    #casestudy3 {
+        grid-area: casestudy3;
+    
+    }
+    
+    #casestudy3text {
+        grid-area: casestudy3text;
+        
+    }
+    
+    #casestudy4 {
+        grid-area: casestudy4;
+        
+    }
+    
+    #casestudy4text {
+        grid-area: casestudy4text;
+    }
+    
+    .arrow {
+        padding-left: 20px;
+    
+    }
+
+    
+    
+    .awePageHeader {
+        height: 750px;
+    }
+
+    .artGrid {
+        display: grid;
+        max-width: 800px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 250px;
+        grid-template-areas: "artimages1 artimages2 artimages3";
+        align-items: center;
+    }
+    
+    #artimages1 {
+        grid-area: artimages1;
+    }
+    
+    #artimages2 {
+        grid-area: artimages2;
+    }
+    
+    #artimages3 {
+        grid-area: artimages3;
+    }
+    
+    #artimages1, #artimages2, #artimages3 {
+        padding: 10px;
+        justify-content: center;
+        max-height: 175px;
+        
+    }
+    }
+
+
+
+
+/* MEDIA QUERY 600px */
+
+@media only screen and (max-width: 700px){
+    
+    /* MEDIA QUERY 600px - NAVIGATION */
     
     .nav {
         display: flex;
@@ -469,14 +606,14 @@ scroll-behavior: smooth;
     
     }
 
-    /* MEDIA QUERY HEADER AND HERO BANNER */
+    /* MEDIA QUERY HEADER AND HERO BANNER 600px */
 
 header {
     height: 700px;
 }
     .herobannerGrid {
         display: grid;
-        max-width: 600px;
+        max-width: 700px;
         justify-content: center;
         grid-template-columns: 60% 40%;
         grid-template-rows: 600px;
@@ -498,7 +635,7 @@ header {
         width: 200px;
         padding-left: 100px;
     }
-/* MEDIA QUERY TYPOGRAPHY */
+/* MEDIA QUERY TYPOGRAPHY 600px */
 
     h1{
         font-size: 28px;
@@ -510,6 +647,7 @@ header {
 
     h3 {
         font-size: 28px;
+        line-height: 40px;
     }
 
     p {
@@ -520,11 +658,13 @@ header {
         font-size: 16px;
     }
 
-    /* MEDIA QUERY CASE STUDIES */
+    /* MEDIA QUERY CASE STUDIES 600px */
+
+   
 
     .casestudyGrid {
         grid-template-columns: 1fr;
-        grid-template-rows: 475px 300px 475px 300px 475px 300px 475px 300px;
+        grid-template-rows: 400px 300px 400px 300px 400px 300px 400px 300px;
         grid-row-gap: 10px;
         grid-template-areas: 
         "casestudy1"
@@ -537,11 +677,9 @@ header {
         "casestudy4text";}
 
         #casestudy1, #casestudy2, #casestudy3, #casestudy4, #casestudyimages {
-            padding: 10px;
-            margin-right: 30px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            max-height: 400px;
+            padding: 0px;
+            margin: 0 auto;
+            max-height: 375px;
             
         
         }
@@ -562,7 +700,7 @@ header {
         
         }
     
-/* MEDIA QUERY ABOUT PAGE */
+/* MEDIA QUERY ABOUT PAGE 600px */
 
         .aboutPageGrid {
             display: grid;
@@ -576,7 +714,7 @@ header {
         
         .aboutPage {
             margin: 0 auto;
-            max-width: 600px;
+            max-width: 700px;
             margin-left: 30px;
             margin-right: 30px;
             
@@ -588,7 +726,7 @@ header {
         
         .artGrid {
             display: grid;
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
             grid-template-columns: 1fr;
             grid-template-rows: 250px 250px 250px;
@@ -619,9 +757,19 @@ header {
             max-width: 300px;
         }
 
+        /* MEDIA QUERY CASE STUDY PAGE 600px */
 
-        /* MEDIA QUERY FOOTER */
-    .footerGrid {
+ .awePageHeader {
+        background-image:  url("../images/AWE\ Case\ Study\ Cover.png");
+        background-position:top;
+        background-size:contain;
+        background-repeat: no-repeat;
+        height: 700px;
+ }
+
+        /* MEDIA QUERY FOOTER 600px */
+
+.footerGrid {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -630,7 +778,7 @@ header {
         background-color: #ffffff;
         padding:50px 0;
         margin-top: 100px;
-        max-width: 600px !important;
+        max-width: 700px !important;
        
         list-style: none;
         text-align: center;
@@ -653,3 +801,349 @@ header {
             padding: 0;
         }
     }
+
+
+    /* MEDIA QUERY 500px */
+
+@media only screen and (max-width: 500px){
+    
+    /* MEDIA QUERY - NAVIGATION 500px */
+    
+    .nav {
+        display: flex;
+        flex-direction: row;
+        margin: 0px 5%;
+        padding: 0px;
+        align-items: baseline;
+        height: 150px;
+
+        
+    }
+    
+    .logo{
+        float: left;
+        margin-left: 0;
+        font-size: 10px !important;
+    }
+    
+    .right{
+        float: right;
+        font-size: small;
+        font-weight: bolder;
+        text-align: center;
+        padding: 0px;
+    }
+    .navitem {
+        padding-right: 0px;
+        padding-left: 10px;
+    
+    }
+
+    /* MEDIA QUERY HEADER AND HERO BANNER 500px */
+
+header {
+    height: 500px;
+}
+
+.aboutPageHeader {
+    height: 200px;
+}
+    .herobannerGrid {
+        display: grid;
+        max-width: 600px;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "intro" "photo";
+        margin: 0 auto;
+       
+    
+    }
+    
+    #intro {
+        grid-area: intro;
+        font-size: 12px !important;
+        margin-left: 20px;
+        
+    }
+
+    #photo {
+        grid-area: photo;
+        width: 150px;
+        padding-left: 10px;
+        position: bottom;
+        display: none;
+    }
+/* MEDIA QUERY TYPOGRAPHY 500px */
+
+    h1{
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 24x;
+        line-height: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    /* MEDIA QUERY CASE STUDIES 500px */
+
+   
+
+    .casestudyGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
+        grid-template-areas: 
+        "casestudy1"
+        "casestudy1text" 
+        "casestudy2" 
+        "casestudy2text"
+        "casestudy3" 
+        "casestudy3text"
+        "casestudy4" 
+        "casestudy4text";}
+
+        #casestudy1, #casestudy2, #casestudy3, #casestudy4, #casestudyimages {
+            padding: 10px;
+            max-height: 400px;
+            padding: 0;
+            margin: 0 auto;
+        
+        }
+
+        #casestudyimages {
+            border-radius: 7%;
+            max-height: 225px;
+            display: flex;
+            align-items: center;
+            
+        }
+
+            #casestudyimages:hover {
+                opacity: 0.9;
+                border-radius: 7%;
+            }
+
+        #casestudy1text, #casestudy2text, #casestudy3text, #casestudy4text {
+            padding: 10px;
+            max-height: 400px;
+        
+        }
+    
+/* MEDIA QUERY ABOUT PAGE 500px */
+
+        .aboutPageGrid {
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1100px 750px;
+            grid-row-gap: 0;
+            grid-template-areas: "aboutWork" "aboutSkills";
+        
+        }
+        
+        .aboutPage {
+            margin: 0 auto;
+            max-width: 400px;
+            margin-left: 30px;
+            margin-right: 30px;
+            
+        }
+        
+        p #aboutbalance {
+            text-align: center;
+        }
+        
+        .artGrid {
+            display: grid;
+            max-width: 400px;
+            margin: 0 auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: 250px 250px 250px;
+            grid-template-areas: "artimages1" "artimages2" "artimages3";
+            justify-content: center;
+        
+        }
+        
+        #artimages1 {
+            grid-area: artimages1;
+            
+        }
+        
+        #artimages2 {
+            grid-area: artimages2;
+           
+        }
+        
+        #artimages3 {
+            grid-area: artimages3;
+           
+        }
+        
+        #artimages1, #artimages2, #artimages3 {
+            
+            align-items: center;
+            justify-content: center;
+            height: unset;
+            max-width: 300px;
+            padding: 10px;
+        }
+
+        /* MEDIA QUERY CASE STUDY PAGE 500px */
+
+ .awePageHeader {
+        background-image:  url("../images/AWE\ Case\ Study\ Cover.png");
+        background-position:top;
+        background-size:contain;
+        background-repeat: no-repeat;
+        height: 400px;
+ }
+
+        /* MEDIA QUERY FOOTER 500px */
+
+.footerGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "links" "message" "findmeonline";
+        background-color: #ffffff;
+        padding:50px 0;
+        margin-top: 100px;
+        max-width: 500px !important;
+        max-height: 350px;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+    }
+
+        .links {
+            grid-area: links;
+        }
+
+        .findmeonline {
+            grid-area: findmeonline;
+        }
+
+        .message {
+            grid-area: message;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    }
+
+    /* MEDIA QUERY 700 - 1100px */
+
+@media only screen and (min-width: 700px) and (max-width: 1000px){
+
+header {
+    height: 800px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 30px;
+}
+   
+   /* MEDIA QUERY CASE STUDIES 700 - 1100px */
+
+   
+
+   .casestudyGrid {
+    display: grid;
+    max-width: 1500px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-row-gap: 100px;
+    grid-template-areas: "casestudy1 casestudy1text" 
+    "casestudy2 casestudy2text"
+    "casestudy3 casestudy3text"
+    "casestudy4 casestudy4text";
+
+}
+
+.casestudyGridArea {
+    display: flex;
+    align-items: center;
+    
+}
+
+#casestudy1, #casestudy2, #casestudy3, #casestudy4 {
+    padding: 10px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#casestudyimages {
+    border-radius: 3%;
+    max-height: 300px;
+    
+}
+
+#casestudyimages:hover {
+    opacity: 0.9;
+    border-radius: 3%;
+}
+
+#casestudy1 {
+    grid-area: casestudy1;
+    
+    
+}
+
+#casestudy1text {
+    grid-area: casestudy1text;
+}
+
+#casestudy2 {
+    grid-area: casestudy2;
+    
+}
+
+#casestudy2text {
+    grid-area: casestudy2text;
+}
+
+#casestudy3 {
+    grid-area: casestudy3;
+
+}
+
+#casestudy3text {
+    grid-area: casestudy3text;
+    
+}
+
+#casestudy4 {
+    grid-area: casestudy4;
+    
+}
+
+#casestudy4text {
+    grid-area: casestudy4text;
+}
+
+.arrow {
+    padding-left: 20px;
+
+}
+
+}
